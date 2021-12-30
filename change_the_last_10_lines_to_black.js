@@ -3,10 +3,6 @@ var img = new SimpleImage("astrachan.jpg");
 print(img.getWidth())
 print(img.getHeight())
 
-var ten_lines = img.getWidth()-10;
-print(ten_lines);
-ten_lines = ten_lines-img.getWidth()
-print(ten_lines);
 for (var pixel of img.values()){
     if(pixel.getY() > img.getHeight()-10){
             pixel.setGreen(0);   
